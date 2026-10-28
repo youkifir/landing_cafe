@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Зерно — кофейня в центре города</title>
+<meta name="description" content="Свежеобжаренный кофе, завтраки и десерты. Работаем с 8:00 до 22:00.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Inter:wght@400;600&display=swap">
+<style>
+:root{--bg:#e8eff8;--ink:#14213d;--accent:#ffc93c;--card:#fff;--muted:#4a5878}
+*{box-sizing:border-box;margin:0}
+body{font:400 17px/1.6 Inter,system-ui,sans-serif;background:var(--bg);color:var(--ink)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header{display:flex;justify-content:space-between;align-items:center;padding:22px 0}
+.logo{font:700 22px Unbounded,sans-serif;text-decoration:none}
+nav a{margin-left:22px;text-decoration:none;font-weight:600}
+nav a:hover{text-decoration:underline}
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;padding:40px 0 70px}
+h1{font:700 clamp(34px,5vw,56px)/1.1 Unbounded,sans-serif;margin-bottom:20px}
+.hero p{max-width:30em;color:var(--muted);margin-bottom:28px}
+.btn{display:inline-block;background:var(--ink);color:#fff;padding:14px 26px;border-radius:999px;font-weight:600;text-decoration:none}
+.btn:hover{background:#243a6b}
+.board{background:var(--ink);color:#fff;padding:30px;border-radius:20px;transform:rotate(1.5deg)}
+.board h2{font:500 15px Unbounded,sans-serif;color:var(--accent);margin-bottom:14px}
+.board li{list-style:none;display:flex;gap:10px;padding:9px 0;border-bottom:1px dashed #ffffff44}
+.board li:last-child{border:0}
+.board li span:nth-child(2){flex:1;border-bottom:1px dotted #ffffff55;transform:translateY(-6px)}
+.board b{color:var(--accent)}
+section{padding:60px 0}
+h2.t{font:700 clamp(26px,3.5vw,36px)/1.2 Unbounded,sans-serif;margin-bottom:30px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:var(--card);padding:26px;border-radius:14px}
+.card h3{font:500 17px Unbounded,sans-serif;margin-bottom:8px}
+.card p{color:var(--muted);font-size:16px}
+.card .p{margin-top:14px;font-weight:600;background:var(--accent);display:inline-block;padding:2px 12px;border-radius:999px}
+.visit{background:var(--accent);border-radius:24px;padding:44px;display:grid;grid-template-columns:1fr 1fr;gap:30px}
+.visit h2{font:700 28px Unbounded,sans-serif;margin-bottom:12px}
+.visit dl{display:grid;grid-template-columns:auto 1fr;gap:6px 18px}
+.visit dt{font-weight:600}
+footer{padding:36px 0;text-align:center;color:var(--muted);font-size:15px}
+@media(max-width:760px){.hero,.visit{grid-template-columns:1fr}.grid{grid-template-columns:1fr}nav a:not(:last-child){display:none}.board{transform:none}.visit{padding:28px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><a class="logo" href="#">Зерно</a><nav><a href="#menu">Меню</a><a href="#visit">Как нас найти</a></nav></header>
+
+<main>
+<div class="hero">
+<div>
+<h1>Кофе, который обжарен на прошлой неделе</h1>
+<p>Обжариваем зёрна сами и готовим из них эспрессо, фильтр и сезонные напитки. Рядом — свежая выпечка и завтраки до 12:00.</p>
+<a class="btn" href="#visit">Прийти сегодня</a>
+</div>
+<aside class="board" aria-label="Популярные напитки">
+<h2>Сегодня заказывают</h2>
+<ul>
+<li><span>Эспрессо</span><span></span><b>45 грн</b></li>
+<li><span>Флэт уайт</span><span></span><b>85 грн</b></li>
+<li><span>Фильтр-кофе</span><span></span><b>70 грн</b></li>
+<li><span>Раф с лавандой</span><span></span><b>110 грн</b></li>
+<li><span>Круассан</span><span></span><b>60 грн</b></li>
+</ul>
+</aside>
+</div>
+
+<section id="menu">
+<h2 class="t">Что у нас есть</h2>
+<div class="grid">
+<article class="card"><h3>Кофе</h3><p>Три сорта зёрен: классический, фруктовый и без кофеина. Бариста подскажет, какой подойдёт.</p><span class="p">от 45 грн</span></article>
+<article class="card"><h3>Завтраки</h3><p>Сырники, овсянка, тосты с авокадо и яйцом. Подаём до 12:00 каждый день.</p><span class="p">от 95 грн</span></article>
+<article class="card"><h3>Десерты</h3><p>Чизкейк, эклеры и брауни от местной кондитерской. Каждое утро свежие.</p><span class="p">от 60 грн</span></article>
+</div>
+</section>
+
+<section id="visit">
+<div class="visit">
+<div>
+<h2>Как нас найти</h2>
+<p>ул. Центральная, 12. Вход со двора, рядом с книжным магазином. Есть розетки и Wi-Fi, можно приходить с ноутбуком.</p>
+</div>
+<dl>
+<dt>Пн–Пт</dt><dd>8:00–22:00</dd>
+<dt>Сб–Вс</dt><dd>9:00–23:00</dd>
+<dt>Телефон</dt><dd><a href="tel:+380000000000">+380 00 000 00 00</a></dd>
+<dt>Instagram</dt><dd><a href="#">@zerno.coffee</a></dd>
+</dl>
+</div>
+</section>
+</main>
+<footer>© 2026 Кофейня «Зерно». Демо-страница.</footer>
+</div>
+</body>
+</html>
